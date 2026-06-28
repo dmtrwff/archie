@@ -1,0 +1,56 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Swift Package Manager
+.build/
+.swiftpm/configuration/registries.json
+.swiftpm/xcode/package.xcworkspace/xcuserdata/
+Packages/
+.swiftpm/
+
+# Xcode
+*.xcworkspace
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.moved-aside
+*.hmap
+*.xccheckout
+*.moved-to-trash
+
+# Build artifacts
+build/
+DerivedData/
+.derivedData/
+.derivedDataXcode/
+*.ipa
+*.dSYM
+*.dSYM.zip
+*.xcarchive
+*.profraw
+
+# Secrets and local config (do not commit keys)
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+
+# Apple signing & distribution (never commit)
+certs/
+.certs/
+*.cer
+*.mobileprovision
+*.provisionprofile
+*.certSigningRequest
+
+# ASO / AI tooling outputs (local only)
+outputs/
+.claude/
+
+# IDE
+.idea/
+*.swp
+*~

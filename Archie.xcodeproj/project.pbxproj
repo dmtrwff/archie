@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C6BA8002FA94B7300D24456 /* SwiftTerm in Frameworks */ = {isa = PBXBuildFile; productRef = B10000000000000000000019 /* SwiftTerm */; };
+		6C7D00AD2FAAD69700023BA3 /* Archie.icon in Resources */ = {isa = PBXBuildFile; fileRef = 6C7D00AC2FAAD69700023BA3 /* Archie.icon */; };
+		B10000000000000000000009 /* ArchieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000C /* ArchieApp.swift */; };
+		B1000000000000000000000A /* TerminalHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000D /* TerminalHostView.swift */; };
+		C00000000000000000000001 /* ChatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000004 /* ChatAPI.swift */; };
+		C00000000000000000000002 /* TerminalSessionBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000005 /* TerminalSessionBridge.swift */; };
+		C00000000000000000000003 /* ChatSidePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000006 /* ChatSidePanel.swift */; };
+		C00000000000000000000007 /* OpenAIChatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000008 /* OpenAIChatAPI.swift */; };
+		D00000000000000000000001 /* MatrixTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00000000000000000000002 /* MatrixTheme.swift */; };
+		E00000000000000000000001 /* OpenAIKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000002 /* OpenAIKeychain.swift */; };
+		E00000000000000000000003 /* OpenAISettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000004 /* OpenAISettingsView.swift */; };
+		E00000000000000000000006 /* OpenAIModelPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000005 /* OpenAIModelPreset.swift */; };
+		F30000000000000000000001 /* ChatRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000002 /* ChatRouter.swift */; };
+		F30000000000000000000003 /* ClaudeChatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000004 /* ClaudeChatAPI.swift */; };
+		F30000000000000000000005 /* DeepSeekChatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000006 /* DeepSeekChatAPI.swift */; };
+		F40000000000000000000001 /* ChatProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40000000000000000000002 /* ChatProvider.swift */; };
+		F40000000000000000000003 /* ClaudeModelPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40000000000000000000004 /* ClaudeModelPreset.swift */; };
+		F40000000000000000000005 /* DeepSeekModelPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40000000000000000000006 /* DeepSeekModelPreset.swift */; };
+		F40000000000000000000007 /* ClaudeKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40000000000000000000008 /* ClaudeKeychain.swift */; };
+		F40000000000000000000009 /* DeepSeekKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40000000000000000000010 /* DeepSeekKeychain.swift */; };
+		G100000000000000000000001 /* SessionSidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = G100000000000000000000002 /* SessionSidebarView.swift */; };
+		G200000000000000000000001 /* SessionWorkspaceRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = G200000000000000000000002 /* SessionWorkspaceRegistry.swift */; };
+		R100000000000000000000001 /* LocalizationBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = R100000000000000000000002 /* LocalizationBundle.swift */; };
+		R100000000000000000000006 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = R100000000000000000000005 /* Localizable.xcstrings */; };
+		S200000000000000000000001 /* ChatMessageRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = S200000000000000000000002 /* ChatMessageRecord.swift */; };
+		S200000000000000000000003 /* ChatPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = S200000000000000000000004 /* ChatPersistence.swift */; };
+		S200000000000000000000005 /* ChatSendingPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = S200000000000000000000006 /* ChatSendingPipeline.swift */; };
+		S210000000000000000000001 /* TerminalSnapshotStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = S210000000000000000000002 /* TerminalSnapshotStorage.swift */; };
+		T100000000000000000000001 /* ThemePalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = T100000000000000000000002 /* ThemePalette.swift */; };
+		T100000000000000000000003 /* DefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = T100000000000000000000004 /* DefaultTheme.swift */; };
+		T100000000000000000000005 /* VisualAppearanceTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = T100000000000000000000006 /* VisualAppearanceTheme.swift */; };
+		T100000000000000000000009 /* UserDefaults+Archie.swift in Sources */ = {isa = PBXBuildFile; fileRef = T100000000000000000000010 /* UserDefaults+Archie.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6C7D00AC2FAAD69700023BA3 /* Archie.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Archie.icon; sourceTree = "<group>"; };
+		B10000000000000000000008 /* Archie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Archie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1000000000000000000000C /* ArchieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchieApp.swift; sourceTree = "<group>"; };
+		B1000000000000000000000D /* TerminalHostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalHostView.swift; sourceTree = "<group>"; };
+		B1000000000000000000000F /* Archie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Archie.entitlements; sourceTree = "<group>"; };
+		C00000000000000000000004 /* ChatAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAPI.swift; sourceTree = "<group>"; };
+		C00000000000000000000005 /* TerminalSessionBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalSessionBridge.swift; sourceTree = "<group>"; };
+		C00000000000000000000006 /* ChatSidePanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSidePanel.swift; sourceTree = "<group>"; };
+		C00000000000000000000008 /* OpenAIChatAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIChatAPI.swift; sourceTree = "<group>"; };
+		D00000000000000000000002 /* MatrixTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixTheme.swift; sourceTree = "<group>"; };
+		E00000000000000000000002 /* OpenAIKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIKeychain.swift; sourceTree = "<group>"; };
+		E00000000000000000000004 /* OpenAISettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAISettingsView.swift; sourceTree = "<group>"; };
+		E00000000000000000000005 /* OpenAIModelPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIModelPreset.swift; sourceTree = "<group>"; };
+		F30000000000000000000002 /* ChatRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRouter.swift; sourceTree = "<group>"; };
+		F30000000000000000000004 /* ClaudeChatAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeChatAPI.swift; sourceTree = "<group>"; };
+		F30000000000000000000006 /* DeepSeekChatAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeekChatAPI.swift; sourceTree = "<group>"; };
+		F40000000000000000000002 /* ChatProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatProvider.swift; sourceTree = "<group>"; };
+		F40000000000000000000004 /* ClaudeModelPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeModelPreset.swift; sourceTree = "<group>"; };
+		F40000000000000000000006 /* DeepSeekModelPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeekModelPreset.swift; sourceTree = "<group>"; };
+		F40000000000000000000008 /* ClaudeKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeKeychain.swift; sourceTree = "<group>"; };
+		F40000000000000000000010 /* DeepSeekKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeekKeychain.swift; sourceTree = "<group>"; };
+		G100000000000000000000002 /* SessionSidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSidebarView.swift; sourceTree = "<group>"; };
+		G200000000000000000000002 /* SessionWorkspaceRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionWorkspaceRegistry.swift; sourceTree = "<group>"; };
+		R100000000000000000000002 /* LocalizationBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationBundle.swift; sourceTree = "<group>"; };
+		R100000000000000000000005 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		S200000000000000000000002 /* ChatMessageRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageRecord.swift; sourceTree = "<group>"; };
+		S200000000000000000000004 /* ChatPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPersistence.swift; sourceTree = "<group>"; };
+		S200000000000000000000006 /* ChatSendingPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSendingPipeline.swift; sourceTree = "<group>"; };
+		S210000000000000000000002 /* TerminalSnapshotStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalSnapshotStorage.swift; sourceTree = "<group>"; };
+		T100000000000000000000002 /* ThemePalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePalette.swift; sourceTree = "<group>"; };
+		T100000000000000000000004 /* DefaultTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTheme.swift; sourceTree = "<group>"; };
+		T100000000000000000000006 /* VisualAppearanceTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualAppearanceTheme.swift; sourceTree = "<group>"; };
+		T100000000000000000000010 /* UserDefaults+Archie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Archie.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B10000000000000000000004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C6BA8002FA94B7300D24456 /* SwiftTerm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B10000000000000000000006 = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000010 /* Sources/Archie */,
+				B10000000000000000000011 /* App */,
+				B10000000000000000000007 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B10000000000000000000007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000008 /* Archie.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B10000000000000000000010 /* Sources/Archie */ = {
+			isa = PBXGroup;
+			children = (
+				6C7D00AC2FAAD69700023BA3 /* Archie.icon */,
+				F20000000000000000000001 /* App */,
+				F20000000000000000000002 /* Chat */,
+				F20000000000000000000003 /* Terminal */,
+				F20000000000000000000004 /* Settings */,
+				F20000000000000000000005 /* Theme */,
+				F20000000000000000000006 /* Config */,
+				F20000000000000000000025 /* Localization */,
+				F20000000000000000000026 /* Resources */,
+			);
+			path = Sources/Archie;
+			sourceTree = "<group>";
+		};
+		B10000000000000000000011 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000000F /* Archie.entitlements */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F20000000000000000000001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000000C /* ArchieApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F20000000000000000000002 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000006 /* ChatSidePanel.swift */,
+				F20000000000000000000021 /* Domain */,
+				F20000000000000000000022 /* Infrastructure */,
+				F20000000000000000000023 /* Application */,
+				F20000000000000000000024 /* UI */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		F20000000000000000000003 /* Terminal */ = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000000D /* TerminalHostView.swift */,
+				C00000000000000000000005 /* TerminalSessionBridge.swift */,
+			);
+			path = Terminal;
+			sourceTree = "<group>";
+		};
+		F20000000000000000000004 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E00000000000000000000002 /* OpenAIKeychain.swift */,
+				F40000000000000000000008 /* ClaudeKeychain.swift */,
+				F40000000000000000000010 /* DeepSeekKeychain.swift */,
+				E00000000000000000000005 /* OpenAIModelPreset.swift */,
+				F40000000000000000000004 /* ClaudeModelPreset.swift */,
+				F40000000000000000000006 /* DeepSeekModelPreset.swift */,
+				F40000000000000000000002 /* ChatProvider.swift */,
+				E00000000000000000000004 /* OpenAISettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F20000000000000000000005 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				T100000000000000000000002 /* ThemePalette.swift */,
+				T100000000000000000000004 /* DefaultTheme.swift */,
+				D00000000000000000000002 /* MatrixTheme.swift */,
+				T100000000000000000000006 /* VisualAppearanceTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		F20000000000000000000006 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				T100000000000000000000010 /* UserDefaults+Archie.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		F20000000000000000000021 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000004 /* ChatAPI.swift */,
+				S200000000000000000000002 /* ChatMessageRecord.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F20000000000000000000022 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000008 /* OpenAIChatAPI.swift */,
+				F30000000000000000000004 /* ClaudeChatAPI.swift */,
+				F30000000000000000000006 /* DeepSeekChatAPI.swift */,
+				S200000000000000000000004 /* ChatPersistence.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		F20000000000000000000023 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F30000000000000000000002 /* ChatRouter.swift */,
+				S200000000000000000000006 /* ChatSendingPipeline.swift */,
+				S210000000000000000000002 /* TerminalSnapshotStorage.swift */,
+				G200000000000000000000002 /* SessionWorkspaceRegistry.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F20000000000000000000024 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				G100000000000000000000002 /* SessionSidebarView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F20000000000000000000025 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				R100000000000000000000002 /* LocalizationBundle.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		F20000000000000000000026 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				R100000000000000000000005 /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B10000000000000000000002 /* Archie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B10000000000000000000013 /* Build configuration list for PBXNativeTarget "Archie" */;
+			buildPhases = (
+				B10000000000000000000003 /* Sources */,
+				B10000000000000000000004 /* Frameworks */,
+				B10000000000000000000005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Archie;
+			packageProductDependencies = (
+				B10000000000000000000019 /* SwiftTerm */,
+			);
+			productName = Archie;
+			productReference = B10000000000000000000008 /* Archie.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B10000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = B10000000000000000000012 /* Build configuration list for PBXProject "Archie" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B10000000000000000000006;
+			packageReferences = (
+				B10000000000000000000018 /* XCRemoteSwiftPackageReference "SwiftTerm" */,
+			);
+			productRefGroup = B10000000000000000000007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B10000000000000000000002 /* Archie */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B10000000000000000000005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C7D00AD2FAAD69700023BA3 /* Archie.icon in Resources */,
+				R100000000000000000000006 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B10000000000000000000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000009 /* ArchieApp.swift in Sources */,
+				B1000000000000000000000A /* TerminalHostView.swift in Sources */,
+				C00000000000000000000001 /* ChatAPI.swift in Sources */,
+				C00000000000000000000002 /* TerminalSessionBridge.swift in Sources */,
+				C00000000000000000000003 /* ChatSidePanel.swift in Sources */,
+				C00000000000000000000007 /* OpenAIChatAPI.swift in Sources */,
+				F30000000000000000000003 /* ClaudeChatAPI.swift in Sources */,
+				F30000000000000000000005 /* DeepSeekChatAPI.swift in Sources */,
+				F30000000000000000000001 /* ChatRouter.swift in Sources */,
+				S200000000000000000000001 /* ChatMessageRecord.swift in Sources */,
+				S200000000000000000000003 /* ChatPersistence.swift in Sources */,
+				S200000000000000000000005 /* ChatSendingPipeline.swift in Sources */,
+				S210000000000000000000001 /* TerminalSnapshotStorage.swift in Sources */,
+				G100000000000000000000001 /* SessionSidebarView.swift in Sources */,
+				G200000000000000000000001 /* SessionWorkspaceRegistry.swift in Sources */,
+				E00000000000000000000001 /* OpenAIKeychain.swift in Sources */,
+				F40000000000000000000007 /* ClaudeKeychain.swift in Sources */,
+				F40000000000000000000009 /* DeepSeekKeychain.swift in Sources */,
+				E00000000000000000000006 /* OpenAIModelPreset.swift in Sources */,
+				F40000000000000000000003 /* ClaudeModelPreset.swift in Sources */,
+				F40000000000000000000005 /* DeepSeekModelPreset.swift in Sources */,
+				F40000000000000000000001 /* ChatProvider.swift in Sources */,
+				E00000000000000000000003 /* OpenAISettingsView.swift in Sources */,
+				D00000000000000000000001 /* MatrixTheme.swift in Sources */,
+				T100000000000000000000001 /* ThemePalette.swift in Sources */,
+				T100000000000000000000003 /* DefaultTheme.swift in Sources */,
+				T100000000000000000000005 /* VisualAppearanceTheme.swift in Sources */,
+				T100000000000000000000009 /* UserDefaults+Archie.swift in Sources */,
+				R100000000000000000000001 /* LocalizationBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B10000000000000000000014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B10000000000000000000015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		B10000000000000000000016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = Archie;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = App/Archie.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_FILE_ACCESS_DOWNLOADS_FOLDER = readwrite;
+				ENABLE_FILE_ACCESS_MOVIES_FOLDER = readwrite;
+				ENABLE_FILE_ACCESS_MUSIC_FOLDER = readwrite;
+				ENABLE_FILE_ACCESS_PICTURE_FOLDER = readwrite;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Archie;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.typekit.archie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B10000000000000000000017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = Archie;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = App/Archie.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_FILE_ACCESS_DOWNLOADS_FOLDER = readwrite;
+				ENABLE_FILE_ACCESS_MOVIES_FOLDER = readwrite;
+				ENABLE_FILE_ACCESS_MUSIC_FOLDER = readwrite;
+				ENABLE_FILE_ACCESS_PICTURE_FOLDER = readwrite;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Archie;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.typekit.archie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B10000000000000000000012 /* Build configuration list for PBXProject "Archie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B10000000000000000000014 /* Debug */,
+				B10000000000000000000015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B10000000000000000000013 /* Build configuration list for PBXNativeTarget "Archie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B10000000000000000000016 /* Debug */,
+				B10000000000000000000017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B10000000000000000000018 /* XCRemoteSwiftPackageReference "SwiftTerm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/migueldeicaza/SwiftTerm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.13.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B10000000000000000000019 /* SwiftTerm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B10000000000000000000018 /* XCRemoteSwiftPackageReference "SwiftTerm" */;
+			productName = SwiftTerm;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B10000000000000000000001 /* Project object */;
+}
